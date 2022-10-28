@@ -8,8 +8,8 @@ function App() {
       <header className="App-header">
         <Hero />
         {myName
-        ? <p>Welome Back</p>
-        :<button>Login</button>
+          ? <p>Welome Back</p>
+          : <p>Please Login Above</p>
         }
         <p>Hello {myName || 'guest '}</p>
       </header>
