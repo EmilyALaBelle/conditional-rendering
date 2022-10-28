@@ -1,3 +1,4 @@
+import Hero from './components/Hero';
 import './App.css';
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Hero />
         {myName
         ? <p>Welome Back</p>
         :<button>Login</button>
@@ -16,3 +18,4 @@ function App() {
 }
 
 export default App;
+
