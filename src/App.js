@@ -2,7 +2,7 @@ import Hero from './components/Hero';
 import './App.css';
 
 function App() {
-  const myName = 'Emily'
+  const myName = ''
   return (
     <div className="App">
       <header className="App-header">
