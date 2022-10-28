@@ -1,4 +1,5 @@
 import Hero from './components/Hero';
+import Movies from './components/Movies';
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Hero />
+        <Movies />
         {myName
           ? <p>Welome Back</p>
           : <p>Please Login Above</p>
