@@ -6,14 +6,16 @@ function Hero() {
     const handleLogin = () => {
         setUser({ firstName: 'Emily', email: 'emilylabelle8@gmail.com', admin: true })
     }
-
+const handleLogOut = () => {
+    setUser(null)
+}
     if (!user) { //!user = truthy becaue it is true that it is false
         return <button onClick={handleLogin}>Login</button>
     }
     return (
         <>
             <h1>Hello {user.firstName}</h1>
-            <button>Log Out</button>
+            <button onClick={handleLogOut}>Log Out</button>
         </>
     )
 }
